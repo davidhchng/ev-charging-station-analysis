@@ -60,11 +60,25 @@ This plot tracks session counts over the months, separated by year.
 
 ### Station-Level Demand Concentration
 
-<p align="center">
- <img src="https://github.com/user-attachments/assets/00098d31-ca81-4c78-a7a4-d271cdeb8b78" width = "45%"/>
+<table>
+  <tr>
+    <td align="center" valign="top">
+      <img
+        src="https://github.com/user-attachments/assets/eb7da320-31aa-4d59-b875-594df9b98a19"
+        width="100%"
+        alt="Top 10 EV Charging Stations (2016–2018)"
+      />
+    </td>
+    <td align="center" valign="top">
+      <img
+        src="https://github.com/user-attachments/assets/3708f2f1-69a8-4146-ab24-92c26f8e23c4"
+        width="100%"
+        alt="Top 10 EV Charging Stations (2019–2020)"
+      />
+    </td>
+  </tr>
+</table>
 
-  <img  src="https://github.com/user-attachments/assets/d09ade2b-6b03-4b1e-9eea-b5eec4b22a9e" width="45%" />
-</p>
 
 
 This plot tracks the 10 most session-heavy stations over the years of the dataset.
