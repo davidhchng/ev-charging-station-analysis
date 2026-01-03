@@ -60,7 +60,12 @@ This plot tracks session counts over the months, separated by year.
 
 ### Station-Level Demand Concentration
 
-![](figures/time_station.png)
+<p align="center">
+ <img src="https://github.com/user-attachments/assets/00098d31-ca81-4c78-a7a4-d271cdeb8b78" width = "45%"/>
+
+  <img  src="https://github.com/user-attachments/assets/d09ade2b-6b03-4b1e-9eea-b5eec4b22a9e" width="45%" />
+</p>
+
 
 This plot tracks the 10 most session-heavy stations over the years of the dataset.
 
