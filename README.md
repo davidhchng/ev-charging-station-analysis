@@ -1,14 +1,21 @@
-# EV Charging Station Usage Analysis (2016-2020)
+# Palo Alto EV Charging Station Usage Analysis (2016-2020)
 
 ## Table of Contents
 
-- Project Background
-- Executive Summary
-- Insights Deep-Dive
+- [Project Background](#project-background)
+- [Executive Summary](#executive-summary)
+  - [Data Structure](#data-structure)
+- [Insights Deep-Dive](#insights-deep-dive)
+  - [Overall Ussage Trends Over Time](#overall-usage-trends-over-time)
+  - [Station-Level Demand Concentration](#station-level-demand-concentration)
+  - [User Behavior And Segmentation](#user-behavior-and-segmentation)
+  - [Sessions vs Energy Consumption](#sessions-vs-energy-consumption)
+  - [Weekday vs Weekend Usage Patterns](#weekday-vs-weekend-usage-patterns)
+- [Recommendations](#recommendations)
+- [Assumptions](#assumptions)
+- [Limitations](#limitations)
 
-
-
-## Project Background 
+## Project Background
 
 This project analyzes electric vehicle (EV) charging station usage in Palo Alto from 2016 to 2020. We will step into the shoes of an analyst for the station provider and try to extract some valuable insights from the dataset given. We will use session-level amd user-type of data, and our goal will be to understand how charging demand evolves over time, how usage is distributed across different stations and users, and how behavioral patterns contribute to infrastructure strain and patterns.
 
@@ -63,7 +70,7 @@ This plot tracks the 10 most session-heavy stations over the years of the datase
 
 - This pattern suggests that bottlenecks in infrastructure are location-specific, and persistent/increasing as time moves forward.
 
-### User Behavior & Segmentation
+### User Behavior And Segmentation
 
 Users were segmented into Light (0-50 sessions), Medium (51-200 sessiosn), and Heavy (201+ sesssions):
 
@@ -78,6 +85,8 @@ Users were segmented into Light (0-50 sessions), Medium (51-200 sessiosn), and H
 - Medium users act as a transitional group, with behavior patterns that more closely resemble heavy users than light users.
 
 These findings indicate that infrastructure demand is driven primarily by a small group of frequent users, rather than overall user volume. Heavy user patterns may be predictable, so future operations can serve the tendencies of this user type.
+
+### Sessions vs Energy Consumption
 
 ![](figures/sessions_vs_energy.png)
 
