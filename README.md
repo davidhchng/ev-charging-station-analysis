@@ -21,13 +21,13 @@
 
 ## Project Background
 
-This project analyzes electric vehicle (EV) charging station usage in Palo Alto from 2016 to 2020. We will step into the shoes of an analyst for the station provider and try to extract some valuable insights from the dataset given. We will use session-level amd user-type of data, and our goal will be to understand how charging demand evolves over time, how usage is distributed across different stations and users, and how behavioral patterns contribute to infrastructure strain and patterns.
+Electric vehicles are a growing genre of transportation, and with that growth comes more rigorous demand and management of public charging stations. This project analyzes electric vehicle charging station usage in Palo Alto from 2016 to 2020. The objective will be to work with the station provider to extract some valuable insights from the dataset given. Session-level and user-type of data will be used to understand how charging demand evolves over time, how usage is distributed across different stations and users, and how behavioral patterns contribute to infrastructure strain and patterns.
 
-This analysis is intended to support data-driven decision-making for charging infrastructuren planning, demand management, and policy design that is focused on user patterns. We will give particular attention to temporal patterns, demand concentration, and differences in charging behavior across different types of charging users.
+This analysis is intended to support decision-making for charging infrastructuren planning, demand management, and policy design that is focused on user patterns. Particular attention will be given to temporal patterns, demand concentration, and differences in charging behavior across different types of charging users.
 
 ### Data Structure
 
-The original dataset tracked each row as an event on a station, but not necessarily a user session. To address this, we had to aggregate certain rows together. More detail on how this was done can be found in the analysis notebook. After it was done, three tables were created. One for distinct users, distinct sessions, and distinct stations. Sessions and stations were then used to create station_daily_utilization:
+The original dataset tracked each row as an event on a station, but not necessarily a user session. To address this, certain rows had to be aggregated together. More detail on how this was done can be found in the analysis notebook. After it was done, three tables were created. One for distinct users, distinct sessions, and distinct stations. Sessions and stations were then used to create station_daily_utilization:
 
 <img width="1068" height="1134" alt="image" src="https://github.com/user-attachments/assets/5ffe7bb4-7a18-45c3-ba61-83661f1e3ac6" />
 
@@ -153,7 +153,7 @@ Each reccomendation below is grounded in the preceding visualizations and result
 
 ### Implement Weekday/Weekend Policies
 
-- We saw that charging demand is consistenly higher on weekdays, and lower on weekends. This pattern remained stable across years, indicating predictable commuter-driven usage.
+- It's visible that charging demand is consistenly higher on weekdays, and lower on weekends. This pattern remained stable across years, indicating predictable commuter-driven usage.
 
 - To address this, it may be benefical to introduce demand-shaping mechanisms, such as weekday peak pricing, or weekend/off-peak incentives. These policies could shift flexible charging behavior away from peak periods, reducing congestionn without requiring immediate infrastructure changes.
 
@@ -177,17 +177,17 @@ Each reccomendation below is grounded in the preceding visualizations and result
 
 ## Assumptions
 
-- We assume that the number of recorded charging sessions is a valid indicator of charging demand and station utilization.
+- Assume that the number of recorded charging sessions is a valid indicator of charging demand and station utilization.
 
-- We assume that the way data was measured and recorded stayed consistent across all four years.
+- Assume that the way data was measured and recorded stayed consistent across all four years.
 
-- We assume that the availability of the stations remained continuously avaiable to achieve equal opportunity for each station to be used.
+- Assume that the availability of the stations remained continuously avaiable to achieve equal opportunity for each station to be used.
 
-- We assume that user IDS uniquely represent individual drivers, and are not apart of an account-sharing system.
+- Assume that user IDS uniquely represent individual drivers, and are not apart of an account-sharing system.
 
-- We assume that the average energy per session is representitive of charging behavior.
+- Assume that the average energy per session is representitive of charging behavior.
 
-- We assume that external factors, like policy changes, impact stations uniformly, unless otherwise indicated by the data.
+- Assume that external factors, like policy changes, impact stations uniformly, unless otherwise indicated by the data.
 
  ## Limitations
 
