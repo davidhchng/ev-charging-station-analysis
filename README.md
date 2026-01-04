@@ -1,6 +1,6 @@
 # Palo Alto EV Charging Station Usage Analysis (2016-2020)
 
-> For a walkthrough on the data analysis and exploration process, refer to the Jupyter Notebook in this repository.
+> For a walkthrough on the data analysis and exploration process, refer to the [analysis notebook.](https://github.com/davidhchng/ev-charging-station-analysis/blob/main/ev-charging-station-analysis.ipynb)
 
 
 
